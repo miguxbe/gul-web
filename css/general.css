@@ -1,4 +1,4 @@
-/* css reset */
+/* CSS reset */
 body, h1 {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     font-weight: normal;
 }
 
-a {	color: #078; }
+a { color: #078; }
 
 a:hover {
     color: black;
@@ -188,11 +188,7 @@ h1 {
 }
 
 #mainstory .body {
-   /* padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    */
-    padding: auto 20px 20px 20px;
+    padding: 0 10px;
     overflow: auto;
     min-height: 250px;
     max-height: 550px;
@@ -213,7 +209,7 @@ h1 {
 
 #mainstory .expand:hover { background: #666; }
 
-#fortunes {	clear: both; }
+#fortunes { clear: both; }
 
 #fortunespre {
     padding: 0;
@@ -258,7 +254,7 @@ h1 {
     overflow: hidden;
 }
 
-.intro:last-child {	margin-right: 10px; }
+.intro:last-child { margin-right: 10px; }
 
 .intro h1 {
     color: #333;
@@ -269,6 +265,7 @@ h1 {
 .intro p {
     padding-top: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     margin: 0;
     color: #333; 
     text-align: justify;
