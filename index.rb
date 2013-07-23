@@ -3,6 +3,7 @@ require 'pp'
 require 'lib'
 require 'twitter'
 require 'fortunes'
+require 'base64'
 
 include Lib
 include Twitter
@@ -18,9 +19,10 @@ end
 
 templates = {
   "--rss" => "rss.erb",
-  "--html" => "index.erb"
+  "--html" => "index.erb", 
+  "--json" => "index_json.erb"
 }
 template_name = templates[ARGV[0]] || templates["--html"]
 
-template = ERB.new(File.new(template_name).read)
+template = ERB.new(File.new(template_name).read, nil, "-")
 puts template.result(binding)

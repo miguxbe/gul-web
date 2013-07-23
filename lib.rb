@@ -62,8 +62,8 @@ module Lib
       @meta = meta
       @body = body
       @identifier = id
-      short = meta[:short] || "#{@body.first[0..20]}..."
-      @short = short
+      #short = meta[:short] || "#{@body.first[0..20]}..."
+      @short = meta[:short]
       @title = meta[:title]
       @path = "/#{section}/#{id}"
       @section = get_section(section)
@@ -77,6 +77,10 @@ module Lib
       @pictures = meta[:img].collect do |img|
         Picture.new(meta[:imgroot], img)
       end
+    end
+    
+    def method_missing (name) 
+      @meta[name.to_sym]
     end
   end
 

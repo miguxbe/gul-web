@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <%= partial("head") %>  
+  </head>
+  <body>
+    <%= partial("javascript") %>
+    
+    <div id="nav">
+      <!--
+      <a href="index.html">
+        <img alt="" src="home.png" />
+      </a>
+      -->
+      <% @sections.each do |section| %>
+        <div class="navitem" style="border-bottom: 3px solid <%= section.color %>">
+          <%= section.name %>
+        </div>          
+      <% end %>
+    </div>
+      
+    <%= partial("menu") %>  
+      
+    <div id="main">
+      
+      <% if @announce %>
+        <div id="announce">
+          <%= @announce %>
+        </div>
+      <% end %>
+      
+      <div id="mainstory" class="story_<%= @story.section.identifier %>">
+        <%= partial("story") %>
+      </div>  
+      
+      <% if @timeline.size > 0 %>
+        <div class="more_in_section">
+          <h1>
+            Relacionadas:
+          </h1>
+          <ul>
+          <% @timeline.reverse.each do |story| %>
+            <li class="menuitem_<%= story.section.identifier %>">
+            <a href="<%= story.path %>">
+              <%= story.title %>
+            </a>
+            </li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+
+    <%= partial("fortunes") %>
+
+    <%= partial("footer") %>
+  </body>
+</html>

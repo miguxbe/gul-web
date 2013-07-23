@@ -1,0 +1,18 @@
+<%
+def json (story)
+  title = story.title.upcase
+  brief = story.short.gsub("\n", "").gsub("\"", "\\\"")
+  "{\"title\":\"#{title}\", \"brief\":\"#{brief}\", \"img\":\"#{story.background}\"}"
+end
+%>
+{
+  "slides": [
+    <%- timeline = @timeline.reverse -%>
+    <%- timeline.each do |story| -%>
+      <%- if story.short -%>
+        <%= json(story) %>
+        <%= "," if story != timeline.last %>
+      <%- end -%>
+    <%- end -%>
+  ]
+}
