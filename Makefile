@@ -15,10 +15,8 @@ css: general.css bootstrap-responsive.css bootstrap.css
 rss: index.rb rss.erb
 	ruby index.rb --rss > ${RSS}
 
-css.css: css.rb css.erb 
-	ruby $< > ${OUT}/$@
-
 %.css: 
+	mkdir -p ${OUT}/css
 	cp css/$@ ${OUT}/css
 
 #	WIP -> Compressing css.
