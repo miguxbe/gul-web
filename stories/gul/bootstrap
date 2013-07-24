@@ -1,4 +1,4 @@
-title = "RETOCANDO GUL.ES"
+title = "Retocando gul.es"
 comicimg = "/img/bootstrap/b.png"
 comictxt = "Puede parecer extraño al principio"
 comictxtcolor = "#fad"
@@ -94,12 +94,28 @@ var colors = {
 
 var slide = 0;
 
+var cached = {};
+
 function impetus() {
+  var imgroot = '/img/bootstrap/';
+
   s = script[slide];
   picture = s[0];
-  $('#comicimg').attr('src', '/img/bootstrap/' + picture + ".png");
-  $('#comictext').text(s[1]).css("color", colors[picture[0]]).css("text-align", align[picture]);
+  text = s[1]
+  $('#comicimg').attr('src', imgroot + picture + ".png");
+  $('#comictext').text(text).css("color", colors[picture[0]]).css("text-align", align[picture]);
   slide = slide + 1;
+
+  n = imgroot + script[slide][0];
+  if (cached[n]) {
+    // already cached
+  } else {
+    $.ajax({
+      url: n,
+    }).success(function() {
+      cached[n] = true;
+    });
+  }
 }
 
 $('#vendetta').click(impetus);
