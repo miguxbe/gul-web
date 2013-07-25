@@ -190,10 +190,10 @@ h1, h2, h3 {
 }
 
 #story {
-	background-color: rgba(90, 114, 125, .1);;
+	background-color: rgba(90, 114, 125, .1);
 	border-top: 1px solid #bbb;
-    border-bottom: 1px solid #bbb;
-    margin-bottom: 50px;
+    	border-bottom: 1px solid #bbb;
+ 	margin-bottom: 50px;
 	padding-top:10px;
 }
 
