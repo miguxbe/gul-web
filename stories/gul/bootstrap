@@ -1,6 +1,6 @@
-title = "RETOCANDO GUL.ES"
+title = "Retocando gul.es"
 comicimg = "/img/bootstrap/b.png"
-comictxt = "Puede parecer extraño al principio"
+comictxt = "En resumen, que no es tan complicado"
 comictxtcolor = "#fad"
 
 <div id="vendetta" style="position:relative;background-repeat: no-repeat; background-image: background-size: 100%;">
@@ -12,8 +12,6 @@ comictxtcolor = "#fad"
 
 <script type="text/javascript">
 var script = [
-    ["b", "Puede parecer extraño al principio"],
-    ["b", "Pero luego te acostumbras."],
     ["b", "En resumen, que no es tan complicado."],
     ["b", "Tu pones un <div> con position relative que sea el contenedor,"],
     ["b", "Luego metes dentro otro <div> pero le pones position absolute."],
@@ -25,9 +23,9 @@ var script = [
     ["b", "Entonces, ¿te gusta cómo ha quedado la página del GUL?"],
     ["b", "Ahora es totalmente responsiva"],
     ["b", "Así que debería verse bien en cualquier dispositivo"],
-    ["e", "(A ti te daba yo con mi dispositivo)"],
+    ["e", "(No entiendo una palabra)"],
     ["b", "Ha quedado muy mona, todo con CSS fluido"],
-    ["e", "(No puede estar diciendo estas cosas)"],
+    ["e", "(Lo que tu digas, guapa)"],
     ["b", "La he hecho con bootstrap que es una biblioteca muy buena"],
     ["b", "Y que tiene un grandísimo índice de penetración"],
     ["e", ""],
@@ -46,36 +44,32 @@ var script = [
     ["j", "(¿Y qué más? ¿Publica la página con comandos AT?)"],
     ["b", "Así que hemos puesto un hook en el servidor git"],
     ["b", "Para que al hacer push se compile y publique solita"],
-    ["j", "(En una BBS, claro)"],
+    ["j", "(Y que la recite un heraldo o qué)"],
+    ["b", "Pero como no hay escritura, no se nos pueden colar exploits"],
+    ["j", "(Ni ganas que tendrán)"],
     ["b", "Lo sabía, no te gusta la idea."],
+    ["j", "(Hombre pues no)"],
     ["b", "Siempre me pasa igual."],
     ["b", "Me involucro demasiado y luego no vale para nada."],
-    ["b", "Como la vez en que estuve año y medio aprendiendo eLisp"],
-    ["b", "Y luego resulta que todo el mundo decía que es mejor vim."],
-    ["j", "(Por favor otra vez no)"],
-    ["b", "Ahora me despierto por las mañanas y siento que ya no queda aire para mi"],
-    ["b", "Y solo veo una salida."],
+    ["b", "Como la vez en que estuve año y medio aprendiendo lisp"],
+    ["b", "Y luego resulta que no lo usa ni el tato."],
     ["j", "(Adiós alineación)"],
-    ["b", "Usar mac."],
+    ["b", "Y al final solo me queda una opción"],
+    ["j", "(No digas liarte con el latin lobo, no digas liarte con él)"],
+    ["b", "Usar un mac."],
     ["j", "(VENGA YA SI ESO ES PARA MODISTAS)"],
     ["b", "Y cambiar de aires. No sé, dedicarme a algo diferente."],
+    ["j", "(A corte y confección)"],
     ["b", "Quizá a la administración de sistemas"],
     ["b", "Siempre he querido saber qué es LVM o LDAP"],
-    ["b", "y dejar a los usuarios sin clave de root o sin quota."],
-    ["b", "O coger un servidor gigante con veinte servicios"],
-    ["b", "y cambiarlo por veinte máquinas virtuales, una con cada servicio"],
-    ["j", "(A hacer puñetas el rendimiento)"],
-    ["b", "Así todo sería más gestionable y más devops"],
-    ["j", "(Y 20 máquinas justitas de recursos cada una)"],
-    ["b", "Creo que voy a hacer eso mismo en el GUL ahora mismo"],
-    ["j", "(Con lo bien que funciona un linux pelao)"],
-    ["b", "Pero como Xen es una patata le pondré un vmware"],
-    ["j", "(Si, qemu)"],
-    ["b", "¿Te vienes?"],
-    ["j", "(Yo paso de qemu, de los devops, de ti y de todo)"],
+    ["b", "Quizá hasta llegue a ser devops"],
+    ["b", "Creo que voy a estudiarme la LPI ahora mismo"],
+    ["j", "(Lo primero coherente que dices)"],
+    ["b", "¿Te apuntas a estudiar?"],
+    ["j", "(Planazo)"],
     ["b", "Después podemos ir a mi casa."],
-    ["e", "VOY"],
-    ["k", "23 de agosto de 2013 - Reunión gul-root"]
+    ["e", "Voy."],
+    ["k", ""]
 ];
 
 var align = {

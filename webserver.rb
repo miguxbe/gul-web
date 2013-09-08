@@ -6,6 +6,7 @@ require 'socket'
 webserver = TCPServer.new('0.0.0.0', 8080)
 while (session = webserver.accept)
    request = session.gets
+   next unless request
    puts request
    session.print "HTTP/1.1 200/OK\r\nContent-type:text/html\r\n\r\n"
    trimmedrequest = request.gsub(/GET\ \//, '').gsub(/\ HTTP.*/, '')
